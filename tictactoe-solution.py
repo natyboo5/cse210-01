@@ -4,6 +4,7 @@ Author: Bro. Manley
 '''
 
 def main():
+    print("Welcome to the tic-tac-toe game. \nAre you ready to play?")
     player = "x"
     board = create_board()
     while not (has_winner(board) or is_a_draw(board)):
@@ -11,7 +12,7 @@ def main():
         make_move(player, board)
         player = next_player(player)
     display_board(board)
-    print("Good game. Thanks for playing!") 
+    print(f"Sorry {player}, you loose! Good game. Thanks for playing!") 
 
 def create_board():
     board = []
