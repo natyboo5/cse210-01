@@ -1,6 +1,7 @@
 '''
 Tic-Tac-Toe: A Solution
 Author: Bro. Manley
+Modified by: Natalia Paredes
 '''
 
 def main():
