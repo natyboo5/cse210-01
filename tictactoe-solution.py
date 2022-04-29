@@ -4,7 +4,7 @@ Author: Bro. Manley
 '''
 
 def main():
-    player = next_player("")
+    player = "x"
     board = create_board()
     while not (has_winner(board) or is_a_draw(board)):
         display_board(board)
@@ -49,7 +49,7 @@ def make_move(player, board):
     board[square - 1] = player
 
 def next_player(current):
-    if current == "" or current == "o":
+    if current == "o":
         return "x"
     elif current == "x":
         return "o"
